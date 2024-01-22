@@ -2,6 +2,8 @@ name: Novu Benchmark
 on:
   push:
   workflow_dispatch:
+  schedule:
+    - cron: "45 * * * *"
 
 permissions:
   contents: read
